@@ -1,6 +1,4 @@
 {
-  "page": 1,
-  "per_page": 80,
   "collections": [
     {
       "id": "maakabg",
@@ -723,6 +721,8 @@
       "videos_count": 5
     }
   ],
+  "page": 1,
+  "per_page": 80,
   "total_results": 879,
   "next_page": "https://api.pexels.com/v1/collections/featured/?page=2&per_page=80"
 }

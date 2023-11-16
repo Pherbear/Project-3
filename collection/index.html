@@ -1,0 +1,16 @@
+---
+layout: base
+title: Collection
+---
+    
+<h1>{{ title }}</h1>
+
+<div>{{ collections.collections.page }}</div>
+
+<ul>
+    {% for collection in photos.fpyycnd.media %}
+        <a href="/collection/id/{{collection.id}}">
+            <img src="{{ collection.src.small }}">
+        </a>
+    {% endfor %}
+</ul>
