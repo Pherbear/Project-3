@@ -7,10 +7,30 @@ site: CPSC 349 - Project 1
     <link rel="stylesheet" href="https://unpkg.com/mvp.css">
 </head>
 
-<body>
-    <div>
-        <a href="/">Home</a>
-        <a href="/collection">View Collection</a>
-    </div>
+<body style = "background-color: {{photo.avg_color}};">
+    <nav>
+        <ul>
+            <li> 
+                <a href="/">Home</a>
+            </li>
+            <li> 
+                <a href="/collection">View Collection</a>
+            </li>
+            <li> 
+                <a href="/about-us">About Us</a>
+            </li>
+        </ul>
+    </nav>
     {{ content }}
 </body>
+
+<footer>
+    <hr />
+    <p>
+      <small>
+        <a href="https://www.pexels.com" target="_blank">
+            Photos provided by Pexels
+        </a>
+      </small>
+    </p>
+</footer>

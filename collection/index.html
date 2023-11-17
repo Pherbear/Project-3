@@ -2,15 +2,16 @@
 layout: base
 title: Collection
 ---
-    
-<h1>{{ title }}</h1>
+<header>
+    <h1>{{ title }}</h1>
+</header>
 
 <div>{{ collections.collections.page }}</div>
 
-<ul>
+<div class="collection">
     {% for collection in photos.fpyycnd.media %}
         <a href="/photo-details/{{collection.id}}.html">
             <img src="{{ collection.src.small }}">
         </a>
     {% endfor %}
-</ul>
+</div>
