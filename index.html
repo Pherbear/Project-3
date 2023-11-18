@@ -2,15 +2,27 @@
 layout: base
 title: Home
 ---
-
 <header>
-  <h1>{{ title }}</h1>
+    <h1>{{ title }}</h1>
 </header>
 
-<section>
-  This is our Home Page for [Collection]
-</section>
+<div style="margin: auto; width: fit-content; padding-bottom: 50px;">
+    This photo gallery presents images of beautiful weather phenomena from around the world.  
+</div>
 
-<section>
-  We chose the [Collection] because [Reasons for choosing Collection]
-</section>
+<blockquote>
+    “Those who contemplate the beauty of the earth find reserves of strength that will endure as long as life lasts."
+</blockquote>
+<blockquote>
+    –Rachel Carson
+</blockquote>
+
+<div>{{ collections.collections.page }}</div>
+
+<div class="collection">
+    {% for collection in photos.fpyycnd.media %}
+        <a href="/photo-details/{{collection.id}}.html">
+            <img src="{{ collection.src.small }}">
+        </a>
+    {% endfor %}
+</div>
