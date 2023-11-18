@@ -1,6 +1,6 @@
-Bryan Rivas 
-Bryan Garcia
-Timothy Vu
+Bryan Rivas  
+Bryan Garcia  
+Timothy Vu  
 Marriam Jawaid
 
 
